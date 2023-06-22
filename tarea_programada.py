@@ -159,11 +159,7 @@ def calcular_parametros_transformador(vacio,
 
     return parametros
 
-
 # Ejemplo de uso
-
-# Le mando la imagen:
-mostrar_imagen("circuito_eq.png")
 
 vacio = {
     'voltaje': 15000,  # Voltaje en la prueba de vacío
@@ -186,10 +182,10 @@ parametros_transformador = calcular_parametros_transformador(vacio, cortocircuit
 # Imprimir los resultados
 print("Parámetros del circuito equivalente del transformador:")
 print("---------------------------------------------")
-#print("Resistencia del devanado primario: {:.4f} Ohm".format(parametros_transformador['R1']))
-#print("Reactancia del devanado primario: + Ohm".format(parametros_transformador['X1']))
 print("\nResistencia Rcc = {:.3f} Ohm".format(parametros_transformador['RCC']))
 print("\nReactancia Xcc = {:.3f} Ohm".format(parametros_transformador['XCC']))
 print("\nResistencia del núcleo Rfe = {:.3f} Ohm".format(parametros_transformador['RFE']))
 print("\nReactancia del núcleo Xu = {:.3f} Ohm".format(parametros_transformador['XU']))
-#print("Corriente nominal: {:.4f} A".format(parametros_transformador['I_N']))
+
+# Le mando la imagen:
+mostrar_imagen("circuito_eq.png")
