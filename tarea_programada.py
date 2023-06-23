@@ -161,18 +161,21 @@ def calcular_parametros_transformador(vacio,
 
 # Ejemplo de uso
 
+# Valores de la prueba de vacío
 vacio = {
-    'voltaje': 15000,  # Voltaje en la prueba de vacío
+    'voltaje': 15000,  
     'corriente': 1.67,
-    'Po': 4000  # Corriente en la prueba de vacío
+    'Po': 4000  
 }
 
+# Prueba de cortocircuito 
 cortocircuito = {
-    'voltaje': 126,  # Voltaje en la prueba de cortocircuito
+    'voltaje': 126,  
     'corriente': 140,
-    'Pc': 7056  # Corriente en la prueba de cortocircuito
+    'Pc': 7056  
 }
 
+# Datos del transformador (placa)
 voltaje_primario = 15000  # Voltaje nominal del devanado primario
 voltaje_secundario = 3000  # Voltaje nominal del devanado secundario
 potencia_nominal = 500000  # Potencia nominal del transformador en VA
